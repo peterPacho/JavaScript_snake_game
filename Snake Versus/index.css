@@ -1,0 +1,104 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+div.main {
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-color: #9ecaed;
+  box-shadow: 0 0 20px #9ecaed;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  
+  //css gradient background
+  background: #234c0f; /* Old browsers */
+  background: -moz-linear-gradient(top,  #234c0f 0%, #000000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#234c0f), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #234c0f 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #234c0f 0%,#000000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #234c0f 0%,#000000 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #234c0f 0%,#000000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234c0f', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+div.container {
+  width: 100%;
+  height: 100%;
+}
+
+img#logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+button#play, button#one, button#two, button#game-starter, button#game-play-again, button#game-main {
+  width: 100%;
+  height: 60px;
+  background: 0;
+  color: white;
+  border: 0;
+  font-size: 20px;
+  
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  
+  cursor: pointer;
+}
+
+button#one, button#game-play-again {
+  bottom: 60px;
+}
+
+div#loading-screen {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 600px;
+}
+
+div#controls-screen {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 600px;
+}
+
+ul {
+  display: table-row;
+  height: 450px;
+}
+
+li {
+  display: table-cell;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+div.color-choose {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: red;
+  cursor: pointer;
+  margin: auto;
+}
+
+div#game-end {
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  z-index: 3000000;
+  top: 0;
+}
